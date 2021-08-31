@@ -4,7 +4,10 @@ const maxSubArray = function(nums) {
 	for (let i = 0; i < nums.length; i++) {
 		currSum = Math.max(0, currSum);
 		currSum += nums[i];
+        console.log('-------------')
+        console.log(currSum);
 		maxSum = Math.max(maxSum, currSum);
+        console.log(maxSum);
 	}
 	return maxSum;
 };
